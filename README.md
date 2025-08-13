@@ -65,7 +65,7 @@ Das Script kopiert .service/.timer nach /etc/systemd/system/, lädt systemd neu 
 
 ## 6) Vorgehen beim Update
 ```bash
-d /opt/oled_netinfo
+cd /opt/oled_netinfo
 sudo -u pi git pull
 
 # Abhängigkeiten ggf. aktualisieren
