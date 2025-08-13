@@ -1,0 +1,19 @@
+[Unit]
+Description=Update Waveshare OLED Module 0.91" based on state (connected/disconnected) of WLAN with ssid "EEE"
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/opt/oled_netinfo
+# venv aktiv nutzen:
+ExecStart=/opt/oled_netinfo/venv/bin/python /opt/oled_netinfo/src/main.py
+Restart=on-failure
+RestartSec=5
+User=root
+EnvironmentFile=-/etc/default/oled_netinfo
+
+[Install]
+WantedBy=multi-user.target

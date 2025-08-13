@@ -1,0 +1,11 @@
+# Datei: /etc/systemd/system/oled_netinfo.timer
+[Unit]
+Description=Timer für die EEE-Verbindungsüberwachung alle 2 Minuten
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=2min
+Unit=oled_netinfo.service
+
+[Install]
+WantedBy=timers.target
