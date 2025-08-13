@@ -1,0 +1,29 @@
+# Byte-compiled / cached files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Archives
+*.7z
+*.zip
+*.tar
+*.tar.gz
+
+# Environment & secrets
+.env
+secrets*.json
+credentials*.json
+EOF
