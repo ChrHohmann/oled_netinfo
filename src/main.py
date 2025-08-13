@@ -78,6 +78,11 @@ try:
     draw.text((0, 2), message1, font=font, fill=text_color)
     draw.text((0, 18), message2, font=font, fill=text_color)
 
+    # rotate picture (optional)
+    UPSIDE_DOWN = True
+    if UPSIDE_DOWN:
+        image = image.transpose(Image.ROTATE_180)
+
     # draw image / update screen
     disp.ShowImage(disp.getbuffer(image))
     # time.sleep(3)
